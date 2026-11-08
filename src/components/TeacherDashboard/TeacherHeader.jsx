@@ -205,17 +205,9 @@ export function TeacherHeader({
                 }}
                 className="flex items-center gap-3 pl-1 pr-3 py-1 rounded-full bg-white/80 hover:bg-white border border-slate-200 shadow-2xs transition-all cursor-pointer"
               >
-                {/* Professor Avatar */}
-                <div className="w-9 h-9 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm overflow-hidden ring-2 ring-slate-200">
-                  <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80"
-                    alt="Dr. S. Roy"
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80";
-                    }}
-                  />
+                {/* User Profile Icon */}
+                <div className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center font-bold text-xs shadow-2xs">
+                  <User className="w-4 h-4 text-slate-600" />
                 </div>
                 <span className="text-sm font-bold text-[#0a182d]">{teacherName}</span>
                 <ChevronDown className="w-4 h-4 text-slate-500" />

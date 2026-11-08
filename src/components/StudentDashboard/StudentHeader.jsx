@@ -215,16 +215,8 @@ export function StudentHeader({
               }}
               className="flex items-center gap-2.5 py-1 px-2 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
             >
-              <div className="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-xs overflow-hidden ring-2 ring-white/20">
-                <img
-                  src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=160&q=80"
-                  alt="Rahul Dey"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80";
-                  }}
-                />
+              <div className="w-8 h-8 rounded-full bg-slate-700/60 border border-slate-600 text-white flex items-center justify-center font-bold text-xs ring-1 ring-white/10 shadow-2xs">
+                <User className="w-4 h-4 text-slate-200" />
               </div>
               <span className="text-sm font-semibold text-white hidden sm:inline-block">
                 {studentName}
