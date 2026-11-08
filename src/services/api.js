@@ -1,5 +1,6 @@
 // API Client communicating with Backend
-// Supports dynamic Vercel deployment URL (VITE_API_URL) with fallback to Vite local proxy ('/api')
+// Reads backend URL strictly from environment variable (VITE_API_URL)
+// Falls back to local dev proxy ('/api') when not specified
 const RAW_API_URL = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || '').trim();
 const cleanBase = RAW_API_URL.replace(/\/+$/, '');
 export const API_BASE = cleanBase
